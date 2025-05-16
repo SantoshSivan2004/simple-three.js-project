@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'https://unpkg.com/three@0.160.1/build/three.module.js';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 
 function createScene(containerId, shapetype)
