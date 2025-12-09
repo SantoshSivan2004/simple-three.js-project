@@ -21,7 +21,6 @@ function createScene(containerId, shapetype)
 
     container.appendChild(renderer.domElement);
 
-
     function createShape(shapetype)
     {
         let geometry;
@@ -37,6 +36,9 @@ function createScene(containerId, shapetype)
                 break;
             case 'torus':
                 geometry = new THREE.TorusGeometry(10, 3, 14, 50);
+                break;
+            case 'tetrahedron':
+                geometry = new THREE.TetrahedronGeometry(14, 0);
                 break;
             default:
                 geometry = new THREE.BoxGeometry(5, 5, 5);
@@ -87,4 +89,5 @@ function lightSource()
 createScene('shape1', 'sphere');
 createScene('shape2', 'cube');
 createScene('shape3', 'torus');
+createScene('shape4', 'tetrahedron');
 
